@@ -9,13 +9,19 @@ This is the library that alows you to use both TVout and PS2keyboard at the same
  The interrupt driven version of ps2 keyboard messed with tv out image/timing.
     
  Tested on atmega328. Not compatible with arduino mega/mega2560 as the XCKn pins are not broken out to header/pad.
-   
- ps2-Keyboard pin   |  Arduino pin
- -------------------------------------------
- data               |  RX, digital pin 0
- clock              |  XCK, digital pin 4
- ground             |  Ground
- 5V                 |  5V   
+  
+  
+ +-------------------+----------------------+ 
+ |ps2-Keyboard pin   |  Arduino pin         |
+ +-------------------+----------------------+
+ |data               |  RX, digital pin 0   |
+ +-------------------+----------------------+
+ |clock              |  XCK, digital pin 4  |
+ +-------------------+----------------------+
+ |ground             |  Ground              |
+ +-------------------+----------------------+
+ |5V                 |  5V                  |
+ +-------------------+----------------------+
 
  pollserial.cpp Heavily modified version of:
  
